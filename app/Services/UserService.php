@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
 class UserService {
+
+    public function userAll() {
+        return User::all();
+    }
+
     public function register(array $data) {
         return User::create([
             'name' => $data['name'],
