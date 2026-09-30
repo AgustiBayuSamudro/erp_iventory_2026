@@ -12,6 +12,10 @@ Route::get('/nav',function() {
     return view('layout.navbar');
 });
 
+Route::get('/sidebar',function() {
+    return view('layout.sidebar');
+});
+
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.proses');
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');

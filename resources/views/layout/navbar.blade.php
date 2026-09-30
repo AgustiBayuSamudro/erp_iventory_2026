@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>StockLy - Dashboard</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
-    <div class="flex border">
-        <div class="flex p-2 justify-center items-center gap-2 border-r">
-            <img src="{{asset('images/logo.png')}}" alt="Logo" class="w-10 h-15 ">
-            <div class="whitespace-nowrap m-2">
-                <h1>StockLy</h1>
-                <h2>ERP Iventory</h2>
+<body class="bg-gray-50">
+    <header class="bg-white border-b border-gray-200 flex items-center justify-between px-4 py-2 shadow-sm">
+
+        <div class="flex items-center gap-3 border-r border-gray-200 pr-6">
+            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-10 h-10 object-contain">
+            <div class="whitespace-nowrap leading-tight">
+                <h1 class="font-bold text-gray-800 text-base">StockLy</h1>
+                <span class="text-xs text-gray-500 font-medium">ERP Inventory</span>
             </div>
         </div>
-        <div class="flex p-2 justify-between items-center gap-2 w-full">
-            <div class="flex gap-1">
-                <h1>StockLy /</h1>
-                <h2>ERP Iventory</h2>
+        <div class="flex items-center justify-between w-full pl-6">
+            <div class="flex items-center gap-2 text-sm text-gray-600">
+                <span class="font-semibold text-gray-800">StockLy</span>
+                <span class="text-gray-400">/</span>
+                <span class="text-gray-500">Dashboard</span>
             </div>
-            <div class="flex gap-1">
-                <span id="realtime-clock"></span>
-                <img src="#" alt="photo">
+            <div class="flex items-center gap-4">
+                <div id="realtime-clock" class="text-right text-xs font-medium text-gray-600 bg-gray-100 px-3 py-1.5 rounded-md border border-gray-200">
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <img src="https://ui-avatars.com/api/?name=Agusti+Bayu&background=0D8ABC&color=fff" alt="User Photo" class="w-10 h-10 rounded-full object-cover border border-gray-300 shadow-sm">
+                </div>
             </div>
+
         </div>
-    </div>
+    </header>
 
     <script>
         function updateClock() {
