@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockLy - Dashboard</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="bg-gray-50">
-    <header class="bg-white border-b border-gray-200 flex items-center justify-between px-4 py-2 shadow-sm">
+    <div class="bg-white border-b border-gray-200 flex items-center justify-between px-4 py-2 shadow-sm">
 
         <div class="flex items-center w-64 gap-3 border-r border-gray-200 pr-6">
             <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-10 h-10 object-contain">
@@ -32,7 +23,7 @@
             </div>
 
         </div>
-    </header>
+    </div>
 
     <script>
         function updateClock() {
@@ -46,5 +37,3 @@
         updateClock();
         setInterval(updateClock, 1000);
     </script>
-</body>
-</html>

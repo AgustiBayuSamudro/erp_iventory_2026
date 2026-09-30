@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="page-transition">
-
+@extends('layout.master')
+@section('content')
     <div class="flex justify-center items-center min-h-screen">
         <div class="gap-4 grid grid-cols-3 max-w-2xl w-full">
 
@@ -22,5 +13,4 @@
             @endforeach
         </div>
     </div>
-</body>
-</html>
+@endsection
