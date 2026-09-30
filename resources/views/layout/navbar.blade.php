@@ -9,7 +9,7 @@
 <body class="bg-gray-50">
     <header class="bg-white border-b border-gray-200 flex items-center justify-between px-4 py-2 shadow-sm">
 
-        <div class="flex items-center gap-3 border-r border-gray-200 pr-6">
+        <div class="flex items-center w-64 gap-3 border-r border-gray-200 pr-6">
             <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-10 h-10 object-contain">
             <div class="whitespace-nowrap leading-tight">
                 <h1 class="font-bold text-gray-800 text-base">StockLy</h1>
